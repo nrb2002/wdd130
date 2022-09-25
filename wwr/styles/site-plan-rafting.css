@@ -1,7 +1,3 @@
-
-/* if you are using any Google fonts change the font names below to your fonts. 
-Any spaces in your font name should be replaced with a +. 
-Fonts are separated by a & */
 @import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato') ;
 @font-face {
 font-family : 'IM Fell French Canon SC';
@@ -32,140 +28,156 @@ src : url(https://fonts.gstatic.com/s/lato/v22/S6uyw4BMUTPHjx4wWw.ttf) format('t
 --nav-hover-link-color : #FDE1C4;
 --nav-hover-background-color : #063360;
 }
-
-
-/*  Look around below...but DON'T CHANGE ANYTHING! */
-
+html {
+background-color : #063360;
+}
 body {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 4em;
-  font-size: 18px;
-  text-align: center;
+max-width : 1200px;
+margin : 0 auto;
+padding : 20px 20px 20px 20px;
+background-color : white;
 }
 img {
-  display: block;
-  margin: 0 auto;
-  max-width: 300px;
+max-width : 100%;
 }
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--heading-font);
-  color: var(--headline-color-on-white);
-}
-h2 {
-  text-align: center;
-}
-hr {
-  height: 3px;
-  margin: 35px 0;
-  background: var(--accent1-color);
+color : var(--headline-color-on-white);
 }
 header {
-  padding: 1em;
-  text-align: center;
-  color: var(--paragraph-color-on-color);
-  background-color: var(--paragraph-background-color);
+padding : 1em;
+text-align : center;
+color : var(--paragraph-color-on-color);
+background-color : #FDE1C4;
 }
 header > h1, header > h2 {
-  color: var(--headline-color-on-color);
+color : var(--headline-color-on-color);
 }
 p {
-  font-family: var(--paragraph-font);
-  color: var(--paragraph-color);
-  padding: 1em;
+padding : 1em;
 }
 .colors {
-  width: 100%;
-  min-width: 350px;
-  margin: 30px auto;
-  text-align: center;
+width : 100%;
+min-width : 350px;
+margin : auto;
+text-align : center;
 }
 .colors th {
-  background-color: #999;
+background-color : #999;
 }
-.colors td{
-  width: 25%;
-  height: 3em;
+.colors td {
+width : 25%;
+height : 3em;
 }
 .primary {
-  background-color: var(--primary-color);
+background-color : #063360;
 }
 .secondary {
-  background-color: var(--secondary-color);
+background-color : #e7b851;
 }
 .accent1 {
-  background-color: var(--accent1-color);
+background-color : #5a1616;
 }
-.accent2{
-  background-color: var(--accent2-color);
+.accent2 {
+background-color : #87BCDE;
 }
 p.colored {
-  background-color: var(--paragraph-background-color);
-  color: var(--paragraph-color-on-color);
+background-color : #FDE1C4;
+color : var(--paragraph-color-on-color);
 }
-nav {
-  background-color: var(--nav-background-color);
-  line-height: 3em;
-  text-align: center;
-  font-size: 1.2em;
-}
-nav  {
-  list-style-type: none;
-  display: flex;
+footer {
+display : grid;
+grid-template-columns : repeat(3,1fr);
+background-color : #063360;
+color : var(--accent2-color);
+font-size : 1.2em;
 }
 nav a {
-  padding:1em;
-  min-width: 120px;
-  text-decoration: none;
-  padding: 10px;
+padding : 1em;
+min-width : 70px;
+text-decoration : none;
+}
+footer ul a {
+text-decoration : none;
+color : inherit;
+}
+.copy-right {
+grid-column : 1;
+grid-row : 1;
+}
+.secondary-menu {
+grid-column : 2;
+}
+.social-icons {
+grid-column : 3;
+padding : 10px;
+}
+nav {
+background-color : #5a1616;
+line-height : 3em;
+text-align : center;
+font-size : 1.2em;
+}
+nav > ul {
+list-style-type : none;
+display : flex;
 }
 nav a:link, nav a:visited {
-  color: var(--nav-link-color);
+color : var(--nav-link-color);
 }
 nav a:hover {
-  color: var(--nav-hover-link-color);
-  background-color: var(--nav-hover-background-color);
+color : var(--nav-hover-link-color);
+background-color : #063360;
 }
 .sitemap {
-  display: grid;
-  justify-content: center;
-
-  grid-template-columns: repeat(6, 15%);
-  grid-template-rows: 3em 1.5em 1.5em 3em;
-  grid-template-areas: ". . home home . ."
-    ". . . top . ."
-    ". left left right right ."
-    "page2 page2 . . page3 page3";
+display : grid;
+justify-content : center;
+grid-template-columns : repeat(6,15%);
+grid-template-rows : 3em 1.5em 1.5em 3em;
+grid-template-areas : ". . home home . ." ". . . top . ." ". left left right right ." "page2 page2 . . page3 page3";
 }
 .sitemap > div {
-  text-align: center;
+text-align : center;
 }
 .sm-home {
-  grid-area: home;
-  background-color: #ccc;
-  line-height: 3em;
+grid-area : home;
+background-color : #999999;
+line-height : 3em;
 }
 .sm-page2 {
-  grid-area: page2;
-  background-color: #ccc;
-  line-height: 3em;
+grid-area : page2;
+background-color : #999999;
+line-height : 3em;
 }
 .sm-page3 {
-  grid-area: page3;
-  background-color: #ccc;
-  line-height: 3em;
+grid-area : page3;
+background-color : #999999;
+line-height : 3em;
 }
 .top {
-  grid-area: top;
-  border-left: 1px solid;
+grid-area : top;
+border-left : 1px solid;
 }
 .left {
-  grid-area: left;
-  border-top: 1px solid;
-  border-left: 1px solid;
+grid-area : left;
+border-top : 1px solid;
+border-left : 1px solid;
 }
 .right {
-  grid-area: right;
-  border-top: 1px solid;
-  border-right: 1px solid;
+grid-area : right;
+border-top : 1px solid;
+border-right : 1px solid;
+}
+.home-content-1, .home-content-2 {
+display : flex;
+align-items : center;
+justify-content : center;
+padding : 20px 0 20px 5px;
+}
+.home-content-3 {
+display : block;
+text-align : center;
+}
+.home-content-text {
+text-align : center;
+padding : 20px 0 20px 0;
 }
