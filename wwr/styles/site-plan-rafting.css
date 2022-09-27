@@ -21,7 +21,7 @@ src : url(https://fonts.gstatic.com/s/lato/v22/S6uyw4BMUTPHjx4wWw.ttf) format('t
 --headline-color-on-white : #063360;
 --headline-color-on-color : #063360;
 --paragraph-color-on-white : #063360;
---paragraph-color-on-color : #FFF;
+--paragraph-color-on-color : #063360;
 --text-background-color : #FDE1C4;
 --nav-link-color : #e7b851;
 --nav-background-color : #5a1616;
@@ -35,7 +35,8 @@ body {
 max-width : 1200px;
 margin : 0 auto;
 padding : 20px 20px 20px 20px;
-background-color : white;
+background-color : #FFF;
+opacity: .9;
 }
 img {
 max-width : 100%;
