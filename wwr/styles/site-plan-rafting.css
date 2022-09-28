@@ -12,9 +12,9 @@ font-weight : 400;
 src : url(https://fonts.gstatic.com/s/lato/v22/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
 }
 :root {
---primary-color : #063360;
+--primary-color : #5a1616;
 --secondary-color : #e7b851;
---accent1-color : #5a1616;
+--accent1-color : #063360;
 --accent2-color : #87BCDE;
 --heading-font : verdana,sans-serif;
 --paragraph-font : arial,sans-serif;
@@ -36,7 +36,7 @@ max-width : 1200px;
 margin : 0 auto;
 padding : 20px 20px 20px 20px;
 background-color : #FFF;
-opacity: .9;
+opacity: .85;
 }
 img {
 max-width : 100%;
@@ -70,25 +70,25 @@ width : 25%;
 height : 3em;
 }
 .primary {
-background-color : #063360;
+background-color : var(--primary-color);
 }
 .secondary {
-background-color : #e7b851;
+background-color : var(--secondary-color);
 }
 .accent1 {
-background-color : #5a1616;
+background-color : var(--accent1-color);
 }
 .accent2 {
-background-color : #87BCDE;
+background-color : var(--accent2-color);
 }
 p.colored {
-background-color : #FDE1C4;
+background-color : var(--secondary-color);
 color : var(--paragraph-color-on-color);
 }
 footer {
 display : grid;
 grid-template-columns : repeat(3,1fr);
-background-color : #063360;
+background-color : var(--accent1-color);
 color : var(--accent2-color);
 font-size : 1.2em;
 }
