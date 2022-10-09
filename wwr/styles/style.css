@@ -3,6 +3,18 @@
 font-family : 'IM Fell French Canon SC';
 font-style : normal;
 font-weight : 400;
+src : url(https://fonts.gstatic.com/s/imfellfrenchcanonsc/v22/FBVmdCru5-ifcor2bgq9V89khWcmQghEURY7H0czWhQ.ttf) format('truetype');
+}
+@font-face {
+font-family : 'Lato';
+font-style : normal;
+font-weight : 400;
+src : url(https://fonts.gstatic.com/s/lato/v23/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
+}
+@font-face {
+font-family : 'IM Fell French Canon SC';
+font-style : normal;
+font-weight : 400;
 src : url(https://fonts.gstatic.com/s/imfellfrenchcanonsc/v20/FBVmdCru5-ifcor2bgq9V89khWcmQghEURY7H0czWhQ.ttf) format('truetype');
 }
 @font-face {
@@ -31,119 +43,93 @@ src : url(https://fonts.gstatic.com/s/lato/v22/S6uyw4BMUTPHjx4wWw.ttf) format('t
 html {
 background-color : #063360;
 }
-
 body {
-    max-width : 1200px;
-    margin : 0 auto;
-    padding : 0 auto;
-    background-color : #FFF;
-    width: 70%;
-    }
-
-#content{
-    max-width: 1600px;
-    margin: 0 auto;
-    }
-
+max-width : 1200px;
+margin : 0 auto;
+background-color : #FFF;
+width : 70%;
+}
+#content {
+max-width : 1600px;
+margin : 0 auto;
+}
 header {
-    padding : 1em;
-    text-align : center;
-    color : var(--paragraph-color-on-color);
-    background-color : #FDE1C4;
-    }
-
-.logo, .icon{
-    width: 80px;
+padding : 1em;
+text-align : center;
+color : var(--paragraph-color-on-color);
+background-color : #FDE1C4;
 }
-
-h1, h2, h3, h4, h5, h6,
-.home-title, .msg h2 {
-    color : var(--primary-color);
-    }
-
-p{
-    color:var(--paragraph-color-on-white);
+.logo, .icon {
+width : 80px;
 }
-
+h1, h2, h3, h4, h5, h6, .home-title, .msg h2 {
+color : var(--primary-color);
+}
+p {
+color : var(--paragraph-color-on-white);
+}
 nav {
-    background-color: var(--primary-color);
-    line-height: 3em;
-    text-align: center;
-    font-size: 1.2em;
+background-color : #5a1616;
+line-height : 3em;
+text-align : center;
+font-size : 1.2em;
 }
-
-nav a{
-    color : var(--nav-link-color);
-    padding : 1em;
-    min-width : 70px;
-    text-decoration : none;
-    }
-
-nav a:link, nav a:visited{
-    background-color : #5a1616;
-    line-height : 3em;
-    text-align : center;
-    font-size : 1.2em;
-    text-decoration: none;
-    }
-
-nav a:hover{
-    color : var(--nav-hover-link-color);
-    background-color : #063360;
-    }
-
-nav a,
-#hero-msg h1, #hero-msg h4,
-.button-box,
-main section{
-    text-align: center;
-    }
-
-#hero-img{
-    width: 100%;
-    
-    }
-
-#background{
-    height: 725px;
-    background-color: var(--text-background-color);
-    }
-
-.book, .join{
-    background-color: var(--accent2-color);
-    color: var(--accent1-color);
-    }
+nav a {
+color : var(--nav-link-color);
+padding : 1em;
+min-width : 70px;
+text-decoration : none;
+}
+nav a:link, nav a:visited {
+background-color : #5a1616;
+line-height : 3em;
+text-align : center;
+font-size : 1.2em;
+text-decoration : none;
+}
+nav a:hover {
+color : var(--nav-hover-link-color);
+background-color : #063360;
+}
+nav a, #hero-msg h1, #hero-msg h4, .button-box, main section {
+text-align : center;
+}
+#hero-img {
+width : 100%;
+}
+#background {
+height : 725px;
+background-color : #FDE1C4;
+}
+.book, .join {
+background-color : #87BCDE;
+color : var(--accent1-color);
+}
 .book:hover, .join:hover {
-    color : var(--nav-hover-link-color);
-    background-color : var(--headline-color-on-color);
-    }
-    
-.msg, .msg p{
-    color: var(--paragraph-color-on-color);
-    }
-
+color : var(--nav-hover-link-color);
+background-color : #5a1616;
+}
+.msg, .msg p {
+color : var(--paragraph-color-on-color);
+}
 footer {
-    display : grid;
-    grid-template-columns : repeat(3,1fr);
-    background-color : var(--accent1-color);
-    color : var(--accent2-color);
-    font-size : 1.2em;
-    }
-
-footer a{
-    color: var(--accent2-color);
-    text-decoration: none;
+display : grid;
+grid-template-columns : repeat(3,1fr);
+background-color : #063360;
+color : var(--accent2-color);
+font-size : 1.2em;
 }
-    
-footer a:hover{
-    color: var(--nav-hover-link-color)
+footer a {
+color : var(--accent2-color);
+text-decoration : none;
 }
-
-footer p{
-    font-size: 1.2em;
-    color: var(--accent2-color);
+footer a:hover {
+color : var(--nav-hover-link-color);
 }
-
+footer p {
+font-size : 1.2em;
+color : var(--accent2-color);
+}
 footer p a:hover {
-    text-decoration: underline;
-} 
+text-decoration : underline;
+}
