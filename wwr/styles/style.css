@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato') ;
+@font-face {
+font-family : 'IM Fell French Canon SC';
+font-style : normal;
+font-weight : 400;
+src : url(https://fonts.gstatic.com/s/imfellfrenchcanonsc/v20/FBVmdCru5-ifcor2bgq9V89khWcmQghEURY7H0czWhQ.ttf) format('truetype');
+}
+@font-face {
+font-family : 'Lato';
+font-style : normal;
+font-weight : 400;
+src : url(https://fonts.gstatic.com/s/lato/v22/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
+}
+:root {
+--primary-color : #5a1616;
+--secondary-color : #e7b851;
+--accent1-color : #063360;
+--accent2-color : #87BCDE;
+--heading-font : verdana,sans-serif;
+--paragraph-font : arial,sans-serif;
+--headline-color-on-white : #063360;
+--headline-color-on-color : #5a1616;
+--paragraph-color-on-white : #063360;
+--paragraph-color-on-color : #5a1616;
+--text-background-color : #FDE1C4;
+--nav-link-color : #e7b851;
+--nav-background-color : #5a1616;
+--nav-hover-link-color : #FDE1C4;
+--nav-hover-background-color : #063360;
+}
+html {
+background-color : #063360;
+}
+
+#content{
+    max-width: 1600px;
+    margin: 0 auto;
+
+    }
+
+body {
+    max-width : 1200px;
+    margin : 0 auto;
+    padding : 20px 20px 20px 20px;
+    background-color : #FFF;
+    opacity: .85;
+    width: 70%;
+    }
+
+header {
+    padding : 1em;
+    text-align : center;
+    color : var(--paragraph-color-on-color);
+    background-color : #FDE1C4;
+    }
+
+.logo, .icon{
+    width: 80px;
+}
+
+nav {
+    background-color: var(--primary-color);
+    line-height: 3em;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+nav a{
+    color : var(--nav-link-color);
+    padding : 1em;
+    min-width : 70px;
+    text-decoration : none;
+    }
+
+nav a:link, nav a:visited{
+    background-color : #5a1616;
+    line-height : 3em;
+    text-align : center;
+    font-size : 1.2em;
+    text-decoration: none;
+    }
+
+nav a:hover{
+    color : var(--nav-hover-link-color);
+    background-color : #063360;
+    }
+
+nav a,
+#hero-msg h1, #hero-msg h4,
+.button-box,
+main section{
+    text-align: center;
+    }
+
+#hero-img{
+    width: 100%;
+    
+    }
+
+#background{
+    height: 725px;
+    background-color: var(--text-background-color);
+    }
+
+.book, .join{
+    background-color: var(--accent2-color);
+    color: var(--accent1-color);
+    }
+.book:hover, .join:hover {
+    color : var(--nav-hover-link-color);
+    background-color : #063360;
+    }
+
+.home-title, .msg h2, h4{
+    color: var(--accent1-color);
+    }
+    
+.msg, .msg p{
+    color: var(--paragraph-color-on-color);
+    }
+
+footer {
+    display : grid;
+    grid-template-columns : repeat(3,1fr);
+    background-color : var(--accent1-color);
+    color : var(--accent2-color);
+    font-size : 1.2em;
+    }
+
+footer a{
+    color: var(--accent2-color);
+    text-decoration: none;
+}
+    
+footer a:hover{
+    color: var(--nav-hover-link-color)
+}
+
+footer p a:hover {
+    text-decoration: underline;
+} 
