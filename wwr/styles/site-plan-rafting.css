@@ -183,3 +183,28 @@ text-align : center;
 text-align : center;
 padding : 20px 0 20px 0;
 }
+
+footer {
+    display : grid;
+    grid-template-columns : repeat(3,1fr);
+    background-color : var(--accent1-color);
+    color : var(--accent2-color);
+    font-size : 1.2em;
+    }
+
+footer a{
+    color: var(--accent2-color);
+    text-decoration: none;
+}
+    
+footer a:hover{
+    color: var(--nav-hover-link-color)
+}
+
+footer p{
+    font-size: 1.2em;
+    color: var(--accent2-color);
+}
+
+footer p a:hover {
+    text-decoration: underline;
