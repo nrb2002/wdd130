@@ -12,19 +12,19 @@ font-weight : 400;
 src : url(https://fonts.gstatic.com/s/lato/v22/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
 }
 :root {
---primary-color : #5a1616;
+--primary-color : #902727;
 --secondary-color : #e7b851;
 --accent1-color : #063360;
 --accent2-color : #87BCDE;
 --heading-font : verdana,sans-serif;
 --paragraph-font : arial,sans-serif;
 --headline-color-on-white : #063360;
---headline-color-on-color : #5a1616;
+--headline-color-on-color : #902727;
 --paragraph-color-on-white : #063360;
---paragraph-color-on-color : #5a1616;
+--paragraph-color-on-color : #902727;
 --text-background-color : #FDE1C4;
 --nav-link-color : #e7b851;
---nav-background-color : #5a1616;
+--nav-background-color : #902727;
 --nav-hover-link-color : #FDE1C4;
 --nav-hover-background-color : #063360;
 }
@@ -38,6 +38,7 @@ padding : 20px 20px 20px 20px;
 background-color : #FFF;
 opacity: .85;
 width: 70%;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 img {
 max-width : 100%;
@@ -114,7 +115,7 @@ grid-column : 3;
 padding : 10px;
 }
 nav {
-background-color : #5a1616;
+background-color : #902727;
 line-height : 3em;
 text-align : center;
 font-size : 1.2em;
