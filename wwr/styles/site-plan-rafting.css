@@ -88,12 +88,16 @@ background-color : var(--secondary-color);
 color : var(--paragraph-color-on-color);
 }
 footer {
-display : grid;
-grid-template-columns : repeat(3,1fr);
-background-color : var(--accent1-color);
-color : var(--accent2-color);
-font-size : 1.2em;
+    color : var(--accent2-color);
+    font-size : .7em;
+    background-color : var(--accent1-color);
+    padding: 25px 50px;
+    margin-top: 200px; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
+
 nav a {
 padding : 1em;
 min-width : 70px;
