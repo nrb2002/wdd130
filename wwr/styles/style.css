@@ -183,6 +183,7 @@ background-color : #063360;
     grid-row: 4/9;
 }
 
+
 .book, .join {
     background-color : var(--primary-color);
     color : var(--nav-link-color);
