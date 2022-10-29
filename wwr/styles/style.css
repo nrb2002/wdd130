@@ -49,20 +49,31 @@ body {
     font-size: 22px;
     margin: 0;
     padding: 0;
+    
     }
 
 #content {
     max-width : 1600px;
     margin : 0 auto;
     }
+
 header {
-padding : 1em;
-text-align : center;
-color : var(--paragraph-color-on-color);
-background-color : var(--text-background-color);
+    display: grid;
+    grid-template-columns: 150px auto;
+    /*padding : 1em;*/
+    text-align : center;
+    color : var(--paragraph-color-on-color);
+    background-color : var(--text-background-color);
+    
+    
 }
 .logo{
     display: block;
+    border:#7f2222 solid 1px;
+    padding: 20px;
+    border-radius: 20px 0px 0px 20px;
+    
+
     }
 
 .logo, .icon {
@@ -74,7 +85,9 @@ background-color : var(--text-background-color);
 }
 
 #logo_link{
-    padding-top: 5px;
+    /*padding-top: 5px;*/
+    justify-self: center;
+    align-self: center;
 }
 
 h1, h2, h3, h4, h5, h6, .home-title, .msg h2 {
@@ -97,15 +110,18 @@ p {
     }
 
 nav {
+    display: flex;
+    justify-content: space-around;
     background-color : #7f2222;
-    line-height : 3em;
+    /*line-height : 1em;*/
     text-align : right;
-    font-size : 1.2em;
+    /*font-size : 1.2em;*/
+
     }
 
 nav a {
     color : var(--nav-link-color);
-    padding : 35px;
+    padding : 20px;
     min-width : 70px;
     text-decoration : none;
     text-align : center;
@@ -113,15 +129,42 @@ nav a {
 
 nav a:link, nav a:visited {
     background-color : #7f2222;
-    line-height : 3em;
+    /*line-height : 3em;*/
     text-align : center;
-    font-size : 1.2em;
+    /*font-size : 1.2em;*/
     text-decoration : none;
     }
 
 nav a:hover {
 color : var(--nav-hover-link-color);
 background-color : #063360;
+}
+
+#hero{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    /*margin-top: -200px;
+    z-index: -1;
+    */
+}
+
+#hero-box{
+    grid-column: 1/4;
+    grid-row: 1/3;
+    
+    
+}
+
+#hero-msg{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+}
+#hero-msg h1{
+    color:var(--secondary-color);
+}
+#hero-msg h4{
+    color:white;
 }
 
 #hero-msg h1, #hero-msg h4, .button-box, main section {
