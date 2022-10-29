@@ -117,7 +117,6 @@ nav {
     text-align : right;
     /*font-size : 1.2em;*/
     margin: 0;
-
     }
 
 nav a {
@@ -159,7 +158,7 @@ background-color : #063360;
 #hero-msg{
     grid-column: 2/3;
     grid-row: 1/2;
-    margin-top: 100px;
+    margin-top: 250px;
 }
 #hero-msg h1{
     color:var(--secondary-color);
@@ -174,6 +173,7 @@ background-color : #063360;
 
 #hero-img {
     width : 100%;
+    height:130%;
 }
 
 #background {
