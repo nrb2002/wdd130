@@ -274,7 +274,7 @@ footer {
     font-size : .7em;
     background-color : var(--accent1-color);
     padding: 25px 50px;
-    margin-top: 200px; 
+    
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -306,7 +306,7 @@ footer .social img{
 /*###################################################################################################################################"*/
 /*###################################################################################################################################"*/
 
-/*This CSS will not go into effect unless the screen is less than 900px*/
+/*This CSS will not go into effect unless the screen is less than 900px*/  
 
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
@@ -345,11 +345,13 @@ footer .social img{
     #background {
         display: none;
     }
+
     .mountains, .msg {
         width: 80%;
         display: block;
         margin: 0 auto;
     }
+
     footer {
         margin-top: 25px;
     }
