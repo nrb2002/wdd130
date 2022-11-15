@@ -302,6 +302,54 @@ footer .social img{
     padding-top: 15px;
 }
 
+/******************************************CSS specific to the Rates Page**************************************************************/
+.page-title{
+    text-align: center;
+    background-color: var(--text-background-color);    
+}
+
+.rates-section{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: .5%;
+    background-color: var(--accent2-color);
+    margin: 0;
+    padding: 2% 9%;
+}
+
+.rates-card{
+    border: 1px solid;
+    border-radius: 5%;
+    background-color: white;
+    padding: 1%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grand-canyon-3{
+    grid-column: 1/2;
+}
+
+.salmon-5{
+    grid-column: 2/3;
+}
+
+.desolation{
+    grid-column: 3/4;
+}
+
+.grand-canyon-6{
+    grid-column: 4/5;
+}
+
+
+
+.indice-box{
+    width:50%;
+    margin-top: -50%;
+    border: solid 1px;
+}
+
 /*###################################################################################################################################"*/
 /*###################################################################################################################################"*/
 /*###################################################################################################################################"*/
@@ -333,6 +381,7 @@ footer .social img{
         font-size: 25px;
         color: #6f7364;
     }
+
     .rivers-card, .camping-card, .rapids-card { 
         margin: 50px auto;
         width: 60%;
