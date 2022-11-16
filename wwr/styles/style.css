@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato') ;
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+
 @font-face {
 font-family : 'IM Fell French Canon SC';
 font-style : normal;
@@ -22,6 +23,11 @@ font-family : 'Lato';
 font-style : normal;
 font-weight : 400;
 src : url(https://fonts.gstatic.com/s/lato/v22/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'KaushanScript';
+    src: url('../fonts/Kaushan_Script/KaushanScript-Regular.ttf');
 }
 :root {
 --primary-color : #7f2222;
@@ -308,22 +314,35 @@ footer .social img{
     background-color: var(--text-background-color);    
 }
 
+#rates-msg{
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    margin:3% auto;
+}
+
+#rates-msg-text{
+    transform: rotate(-15deg);
+    grid-column: 1/2;
+    font-family: KaushanScript;
+    font-size: 1.8em;
+}
+
+#rates-msg-img{
+    grid-column: 2;
+}
+
+.rates{
+    background-color: var(--accent2-color);
+    margin-top: 0;
+}
+
 .rates-section{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    column-gap: .5%;
-    background-color: var(--accent2-color);
-    margin: 0;
-    padding: 2% 9%;
-}
-
-.rates-card{
-    border: 1px solid;
-    border-radius: 5%;
-    background-color: white;
+    column-gap: 1%;
+    width: 50%;
     padding: 1%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    margin:auto;
 }
 
 .grand-canyon-3{
@@ -342,13 +361,66 @@ footer .social img{
     grid-column: 4/5;
 }
 
-
-
-.indice-box{
-    width:50%;
-    margin-top: -50%;
-    border: solid 1px;
+.rates-card{
+    border: 1px solid;
+    border-radius: 5%;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
+
+.rates-hint{
+    grid-column:1/2; 
+    border: 1px solid;
+    border-radius: 10%;
+    font-size: .7em;
+    font-weight: bold;
+    margin-top: -10%;
+    margin-left: 15%;
+    padding: 2%;
+    height: fit-content;
+    background-color: var(--nav-hover-link-color);
+}
+
+.rates-title{
+    border: 1.5px solid;
+    border-radius:5%;
+    grid-column: 1/4;
+    grid-row: 2/5;
+    margin: 3% 4%;
+    background-color: lightgray;  
+    padding: 1%;  
+}
+
+.rates-fare{
+    font-size: 1.8em;
+    font-weight: bolder;
+    grid-column: 1/4;
+    grid-row: 5/7;
+    margin:3% auto;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    padding: 5% auto;
+}
+
+.rates-dates{
+    grid-column: 1/4;
+    grid-row: 7/14;
+}
+
+.rates-card h5{
+    text-decoration: underline;
+}
+
+.rates-card ul{
+    font-size: medium;
+    text-align: start;
+}
+
+.rates button{
+    margin-top: 2%;
+}
+
 
 /*###################################################################################################################################"*/
 /*###################################################################################################################################"*/
