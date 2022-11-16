@@ -421,6 +421,26 @@ footer .social img{
     margin-top: 2%;
 }
 
+.rates-bottom{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: .5% auto;
+    width: 60%;
+}
+
+.rates-bottom-1{
+    grid-column: 1/3;
+    padding: 2px 15px;
+    box-shadow: 5px 5px 10px lightgray;
+    border:.5px solid;
+    border-color: lightgray;
+    
+}
+
+.rates-bottom-2{
+    grid-column: 3/5;
+}
+
 
 /*###################################################################################################################################"*/
 /*###################################################################################################################################"*/
