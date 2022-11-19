@@ -163,7 +163,7 @@ background-color : #FDE1C4;
 grid-column : 1 / 11;
 grid-row : 4 / 9;
 }
-.book, .join {
+.book, .join, .submit {
 background-color : #7f2222;
 color : var(--nav-link-color);
 font-size : 18px;
@@ -172,7 +172,7 @@ margin-top : 50px;
 border-radius : 5px;
 text-decoration : none;
 }
-.book:hover, .join:hover {
+.book:hover, .join:hover, .submit:hover {
 color : var(--accent2-color);
 background-color : #063360;
 }
@@ -413,6 +413,71 @@ to {
 opacity : 1;
 }
 }
+
+/***********************************************************CONTACT FORM STYLING******************************************************************/
+form {
+    /* Center the form on the page */
+    margin: 0 auto;
+    
+    margin:2% auto;
+    width: 50%;
+  }
+
+fieldset{
+    /* Form outline */
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: .3em;
+}
+
+
+fieldset legend{
+    font-size: 1.3em;
+    color: var(--nav-link-color);
+}
+  
+input,
+textarea {
+    /* To make sure that all text fields have the same font settings
+        By default, textareas have a monospace font */
+    font-size: 1em;
+
+    /* Uniform text field size */
+    width: 100%;
+    box-sizing: border-box;
+
+    /* Match form field borders */
+    border: 1px solid #999;
+
+    padding: 5px;
+}
+  
+input:focus,
+textarea:focus {
+    /* Additional highlight for focused elements */
+    border-color: var(--accent1-color);
+    background-color: var(--text-background-color);
+}
+  
+  textarea {
+    /* Align multiline text fields with their labels */
+    vertical-align: top;
+  
+    /* Provide space to type some text */
+    height: 5em;
+  }
+  
+  .button {
+    /* Align buttons with the text fields */
+    padding-left: 90px; /* same size as the label elements */
+    font-size: 1.5em;
+  }
+  
+
+/***********************************************************END CONTACT FORM STYLING**************************************************************/
+
+
+/***********************************************RESPONSIVE STYLING FOR SMALLER SCREENS***********************************************************/
 @media only screen and (max-width: 300px) {
 .text {
 font-size : 11px;
