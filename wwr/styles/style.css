@@ -467,12 +467,27 @@ textarea:focus {
     height: 5em;
   }
   
-  .button {
+.button {
     /* Align buttons with the text fields */
     padding-left: 90px; /* same size as the label elements */
     font-size: 1.5em;
   }
-  
+
+#feedback {
+    background-color: rgb(196, 235, 196);
+    /*position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;*/
+    margin: 1em auto;
+    padding: .5em;
+    /* make this element invisible until we are ready for it */
+    display: none;      
+    }
+
+.moveDown {
+    margin-top: 3em;
+}
 
 /***********************************************************END CONTACT FORM STYLING**************************************************************/
 
