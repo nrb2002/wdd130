@@ -3,9 +3,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Home - Fountics</title>
 </head>
 <body>
+    <header>
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="images/logo-fountics.png" alt="Fountics Logo">
+        </a>      
+        
+        <nav class="topnav" id="myTopnav">
+            <a href="index.html">Home</a>
+            <a href="computer-lab.html">Computer Lab</a>
+            <a href="programs.html">Programs</a>
+            <a href="about.html">About Us</a>
+            <a href="donate.html">Donate</a>
+            
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+    </header>
+    <aside>
+
+    </aside>
+    <main>
+
+    </main>
+    <aside>
+
+    </aside>
+    <footer>
+
+    </footer>
+
+    <script>
+        /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
     
 </body>
 </html>
