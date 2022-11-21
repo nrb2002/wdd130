@@ -37,7 +37,7 @@ html{
 body {
     width: 75%;
     margin: 0 auto;
-    opacity: .95; 
+    opacity: .97; 
 }
 
 img {
@@ -45,18 +45,22 @@ img {
   margin: 0 auto;
   width:60%;
 }
-h1, h2, h3, h4, h5, h6 {
+h1{
   font-family: var(--heading-font);
   color: var(--primary-color);
 }
-h2 {
-  text-align: center;
-}
+
+h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
+  }
 
 hr {
-  height: 3px;
+  height: 1px;
   margin: 35px 0;
   background: var(--primary-color);
+  width: 100%;
+  padding: 0;
 }
 header {
   padding: .3em;
@@ -156,8 +160,8 @@ aside{
 }
 
 aside h3{text-align: center;}
-.left{margin-left: -6%;}
-.right{margin-right: -4%;}
+.left{margin-left: -4%;}
+.right{margin-right: -2%;}
 aside img{
     width: 50px;
     height: 50px;
@@ -172,15 +176,10 @@ aside img{
 /**********************END MAIN CONTENT***********************************/
 
 /**********************HERO BOX***********************************/
-.hero-box {
-    display: grid;
-    grid-template-rows: 1fr 1fr; 
-    border-bottom: var(--primary-color) solid 1px;
-}
 
 .hero-box img{width: 100%;}
 
-.hero-box p{
+.hero-box p, .content p{
     text-align: center;
     font-size: 1.4em;
     line-height: 1.4em;
@@ -196,16 +195,78 @@ aside img{
 .hero-box-bottom{
     grid-row: 2/3;
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    
+    grid-template-columns: 1fr 3fr 1fr;    
 }
 
 /*.hero-box-bottom p{grid-column: 1/2;}*/
 .hero-box-bottom img{
     grid-column: 2/3;
     margin-top: -3%;
-
 }
+
+.msg{
+    text-align: center;
+    background-color: var(--paragraph-background-color);
+}
+
+/*******************SUBCONTENT 6 POSTS*******************/
+.innovations h2{
+    text-align: center;
+}
+
+.posts{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: .5%
+}
+
+
+
+.posted-item{
+    background-color: white;
+    box-shadow: #999;
+    grid-row: 2/5;
+}
+
+.subcontent img{
+    grid-row: 2/4;
+}
+
+.subcontent p{
+    grid-row: 4/5;
+}
+
+
+
+/*******************eND SUBCONTENT 6 POSTS*******************/
+
+
+footer {
+    color : var(--accent2-color);
+    font-size : .8em;
+    padding : 1% 5%;
+    display : flex;
+    justify-content : space-around;
+    align-items : center;
+    }
+footer a {
+    color : var(--accent2-color);
+    text-decoration : none;
+    }
+
+footer a:hover {
+    color : var(--secondary-color);
+    }
+footer p {
+    font-size : 1.2em;
+    color : var(--accent2-color);
+    }
+
+footer p a:hover {
+    text-decoration : underline;
+    
+}
+
 
 
 
