@@ -48,6 +48,7 @@ img {
 h1{
   font-family: var(--heading-font);
   color: var(--primary-color);
+  background-color: var(--accent1-color);
 }
 
 h2, h3, h4, h5, h6 {
@@ -71,8 +72,6 @@ header {
 header > h1, header > h2 {
   color: var(--headline-color-on-color);
 }
-
-
 
 p {
   font-family: var(--paragraph-font);
@@ -162,6 +161,7 @@ aside{
 aside h3{text-align: center;}
 .left{margin-left: -4%;}
 .right{margin-right: -2%;}
+
 aside img{
     width: 50px;
     height: 50px;
@@ -209,7 +209,11 @@ aside img{
     background-color: var(--paragraph-background-color);
 }
 
-/*******************SUBCONTENT 6 POSTS*******************/
+/*******************POST*******************/
+.innovations{
+    text-align: center;
+}
+
 .innovations h2{
     text-align: center;
 }
@@ -217,28 +221,31 @@ aside img{
 .posts{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: .5%
-}
-
-
-
-.posted-item{
+    gap: .5%;
     background-color: white;
-    box-shadow: #999;
-    grid-row: 2/5;
+    padding: 1%;    
 }
 
-.subcontent img{
-    grid-row: 2/4;
+.post{
+    border: 1px solid;
+    height: fit-content;
 }
 
-.subcontent p{
-    grid-row: 4/5;
+.post img{
+    grid-row: 1/3;
+    width: 100%;
 }
 
+.post p{
+    grid-row: 3/4;
+    font-size: 1em;
+}
 
+.post a{
+    text-decoration: none;
+}
 
-/*******************eND SUBCONTENT 6 POSTS*******************/
+/*******************END POST*******************/
 
 
 footer {
