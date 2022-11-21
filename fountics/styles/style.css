@@ -150,7 +150,7 @@ p.colored {
 main{
     display: grid;
     grid-template-columns: 1fr 7fr 2fr;
-    gap: .5%;    
+    gap: .3%;    
 }
 
 aside{
@@ -264,6 +264,37 @@ button:hover{
     grid-column: 1/4;
     justify-content: center;
 }
+
+/*******************SEARCH BOX************************/
+/* Style the search field */
+form.search input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+  }
+  
+  /* Style the submit button */
+  form.search button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+  }
+  
+  /* Clear floats */
+  form.search::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+/*******************END SEARCH BOX************************/
+
 
 /*******************END POST*******************/
 
