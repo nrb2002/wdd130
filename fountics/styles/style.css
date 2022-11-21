@@ -49,6 +49,7 @@ h1{
   font-family: var(--heading-font);
   color: var(--primary-color);
   background-color: var(--accent1-color);
+  padding: 1%;
 }
 
 h2, h3, h4, h5, h6 {
@@ -212,6 +213,8 @@ aside img{
 /*******************POST*******************/
 .innovations{
     text-align: center;
+    background-color: white;
+    padding: 1%;
 }
 
 .innovations h2{
@@ -222,7 +225,6 @@ aside img{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: .5%;
-    background-color: white;
     padding: 1%;    
 }
 
@@ -243,6 +245,24 @@ aside img{
 
 .post a{
     text-decoration: none;
+}
+
+button{
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    font-size: 1em;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: var(--accent1-color);
+    color: white;
+}
+
+.innovations button{
+    grid-column: 1/4;
+    justify-content: center;
 }
 
 /*******************END POST*******************/
