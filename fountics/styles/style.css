@@ -29,7 +29,7 @@ Fonts are separated by a | */
 
 /*  Look around below...but DON'T CHANGE ANYTHING! */
 html{
-    background-image:url('../images/home-1.jpg');
+    background-image:url('../images/home-2.jpg');
     background-repeat: repeat; 
     background-attachment: fixed;
 }
@@ -54,7 +54,13 @@ h1{
   color: var(--primary-color);
   background-color: var(--accent1-color);
   padding: 1%;
+  ;
 }
+
+.content h1{
+    margin: -3% -3% 2% -3%;
+}
+
 
 h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
@@ -167,7 +173,7 @@ main{
 }
 
 aside{
-    border: var(--primary-color) solid 1px;
+    border: var(--accent2-color) solid 1px;
     padding: 2%; 
     text-align: center;  
     border-radius: 5px;
@@ -239,27 +245,27 @@ aside img{
     background-color: var(--paragraph-background-color);
 }
 
-.program-1, .program-2, .program-3{
+.program-1, .program-2, .program-3, .program-4{
     display: grid;
     grid-template-columns: 3fr 2fr;
 }
 
-.program-1 h3, .program-2 h3, .program-3 h3{
+.program-1 h3, .program-2 h3, .program-3 h3, .program-4 h3{
     grid-row:1/2;
     
 }
 
-.program-1 p, .program-2 p, .program-3 p{
+.program-1 p, .program-2 p, .program-3 p, .program-4 p{
     grid-row:2/3;
     grid-column: 1/2;
     
 }
 
-.program-2 ul, .program-3 ul{
+.program-2 ul, .program-3 ul, .program-4 ul{
     grid-column: 1/2;    
 }
 
-.program-1 img, .program-2 img, .program-3 img{
+.program-1 img, .program-2 img, .program-3 img, .program-4 img{
     grid-row:2/3;
     grid-column: 2/3;
     width: 100%;
