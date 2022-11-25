@@ -12,19 +12,30 @@
 </head>
 <body>
     <header>
-        <a class="accent2" id="logo_link" href="index.html">
-            <img class="logo " src="images/logo_fountics.png" alt="Fountics Logo">
-        </a>      
-        
-        <nav class="topnav primary" id="myTopnav">
-            <a href="index.html" class="active" >Home</a>
-            <a href="computer-lab.html">Computer Lab</a>
-            <a href="programs.html">Programs</a>
-            <a href="about.html" class="active" >About</a>
-                        
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
+        <nav class="navbar primary">
+            <div class="brand-title">
+                <a class="accent2" href="index.html">
+                    <img class="logo " src="images/logo_fountics.png" alt="Fountics Logo">
+                </a>
+            </div>
+
+            <!--Hamburger menu button for smaller screens-->
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </a>
+            <!--End Hamburger menu button for smaller screens-->
+
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="computer-lab.html">Computer Lab</a></li>
+                    <li><a href="programs.html">Programs</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 

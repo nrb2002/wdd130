@@ -23,7 +23,7 @@ Fonts are separated by a | */
   --nav-link-color: #FCFCFF;
   --nav-background-color: var(--primary-color);
   --nav-hover-link-color: var(--primary-color);
-  --nav-hover-background-color: var(--accent2-color);
+  --nav-hover-background-color: var(--accent1-color);
 }
 
 
@@ -37,6 +37,7 @@ html{
 body {
     width: 75%;
     margin: 0 auto;
+    padding:0;
     opacity: .97;    
 }
 
@@ -46,7 +47,10 @@ img {
 }
 
 img.logo {
-    width: 60%;
+    width: 80px;
+    padding:10px;
+    background-color: var(--accent2-color);
+    border-radius: 0 20px;
 }
 
 h1{
@@ -77,10 +81,8 @@ hr {
 }
 header {
   padding: .3em;
-  text-align: center;
-  display: grid;
-  grid-template-columns: 1fr 12fr ;
 }
+
 header > h1, header > h2 {
   color: var(--headline-color-on-color);
 }
@@ -133,35 +135,61 @@ p.colored {
 
 /**********************TOP NAVIGATION STYLING***********************************/
 /* Add a black background color to the top navigation */
-.topnav, nav {
-    overflow: hidden;
-    height: fit-content;
-    opacity: .9;
-    margin-top: 0;
-    padding: 1.5%;
-  }
+.navbar{
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+  width: 100%;
+  justify-content: space-between;
   
-  .topnav a, nav a {    
-    color: #f2f2f2;
-    text-align: center;
-    padding: 1.5em;
-    text-decoration: none;
-    font-size: 1.2em;
-  }
-  
-  .topnav a:hover, nav a:hover {
-    background-color: var(--accent1-color);
-    color: black;
-  }
-  
-  .topnav a.active, nav a.active {
-    background-color: var(--accent1-color);
-    color: white;
-  }
-  
-  .topnav .icon, nav .icon {
-    display: none;
-  }
+}
+
+.brand-title{
+  font-size: 1.5em;
+  margin: .5rem;
+}
+
+.navbar-links ul{
+  margin:0;
+  padding:0;
+  display: flex;
+  margin-right: 10px;
+}
+
+.navbar-links li{
+  list-style: none;  
+  border-radius: 10px;
+}
+
+.navbar-links li a{
+  text-decoration: none;
+  color: var(--nav-link-color);
+  padding: 1rem;
+  display: block;
+}
+
+.navbar-links li:hover, .active{
+  background-color: var(--nav-hover-background-color);
+  border-radius: 10px;
+}
+
+.toggle-button{
+  position: absolute; 
+  top: .75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar{
+  height: 3px;
+  width: 100%;
+  background-color: var(--accent2-color);
+  border-radius: 10px;
+}
 
 /**********************END TOP NAVIGATION STYLING***********************************/
 
@@ -405,36 +433,46 @@ footer p a:hover {
 
 /**********************END HERO BOX***********************************/
   
-  @media screen and (max-width: 900px) {
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
-      float: right;
-      display: block;
-      background-color: var(--accent2-color);
-    }
+@media  screen and  (max-width:1200px){
+  .toggle-button{
+      display: flex;
+  }
 
-    .topnav.responsive {
-        position: relative;
-        padding: 1.1em;
-        background-color: var(--accent2-color);
-        
-    }
+  .navbar-links{
+      display: none;
+      width: 100%;
+  }
 
-    .topnav.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-      background-color: var(--accent2-color);
-      
-    }
-    .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-      color: var(--primary-color);
-    }
+  .navbar{
+      flex-direction: column;
+      align-items: flex-start;
+  }
 
-    .topnav a{font-size: 1em;}
+  .navbar-links ul{
+      width: 100%;
+      flex-direction: column;
 
+  }
 
+  .navbar-links li{
+      text-align: center;
+  }
+
+  .navbar-links li:hover{
+    background-color: var(--primary-color);
+}
+
+  .navbar-links.active{
+      display: flex;
+  }
+
+  
+
+}
+
+@media (max-width: 900px) {
+  .brand-title {
+    display: block;
+    text-align: center;
+  }
 }
