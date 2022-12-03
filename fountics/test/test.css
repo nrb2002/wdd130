@@ -479,10 +479,6 @@ footer p a:hover {
         margin-left: 15px;        
     }
 
-    nav{
-        background: var(--primary-color);
-        opacity: .95;
-    }
 
     
     .nav-toggle{
@@ -544,7 +540,7 @@ footer p a:hover {
     }
 
     .nav-menu li a{
-        font-size: 1.2rem;
+        font-size: 1.2rem; 
     }
 
     .hero h1{
