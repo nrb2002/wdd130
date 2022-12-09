@@ -251,6 +251,8 @@ aside{
     box-sizing: border-box;
     padding: 3% 2%;  
     border-radius: 5px;
+    height: max-content;
+    margin-top: 2%;
 }
 
 aside h3{text-align: center;}
